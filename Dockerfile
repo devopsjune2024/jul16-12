@@ -1,6 +1,7 @@
 FROM maven:3.9.8-amazoncorretto-17-al2023  as base
 COPY . /app
 WORKDIR /app
+EXPOSE 8080
 USER root
 RUN mvn package
 
